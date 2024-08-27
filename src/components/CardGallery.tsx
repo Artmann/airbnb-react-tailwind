@@ -65,7 +65,7 @@ export function CardGallery({ images }: CardGalleryProps): ReactElement {
   return (
     <div
       ref={containerRef}
-      className="w-full aspect-square overflow-hidden relative bg-gray-100"
+      className="w-full aspect-square rounded-lg overflow-hidden relative bg-gray-100"
       onTouchEnd={handleOnTouchEnd}
       onTouchMove={handleOnTouchMove}
       onTouchStart={handleOnTouchStart}
@@ -92,7 +92,7 @@ export function CardGallery({ images }: CardGalleryProps): ReactElement {
         return (
           <motion.img
             alt={image.alt}
-            className="absolute block object-cover object-center w-full h-full rounded-lg"
+            className="absolute block object-cover object-center w-full h-full"
             key={index}
             loading="lazy"
             src={image.src}
